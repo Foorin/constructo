@@ -1,0 +1,110 @@
+@font-face {
+    font-family: interb;
+    src: url(../fonts/Inter/Inter-Bold.otf);
+}
+@font-face {
+    font-family: inter;
+    src: url(../fonts/Inter/Inter-Light.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: interb;
+}
+header{
+    background-image: url(../img/headimg.png);
+    background-size: 100%;
+    color: white;
+}
+.nado{
+    display: flex;
+}
+.hh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.logo:hover{
+    filter: drop-shadow(0 0 20px white);
+    transition: .5s;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menuu{
+    padding-right: 20px;
+}
+.menuu:hover{
+    filter: drop-shadow(0 0 15px  white);
+    transition: .3s;
+}
+.utp{
+    max-width: 100%;
+    font-size: 50pt;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+.offer{
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.more{
+    max-width: 150px;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    transform: translate3d(0px, 0px, 0px);
+}
+.more:hover{
+    filter: drop-shadow(0 0 5px white);
+    transform: translate3d(5%, -5%, 0px);
+    transition: 0.5s;
+}
+
+form{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-height: 500px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+form h2{
+    font-size: 20pt;
+}
+form a{
+    position: relative;
+    top: 100px;
+    left: 25px;
+}
+form a img{
+    max-width: 300px;
+}
+form input{
+    margin: 0 auto;
+    border: 0;
+    border-bottom: 2px solid grey;
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: interb;
+    font-size: 20pt;
+    color: grey;
+}

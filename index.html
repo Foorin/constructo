@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="hh">
+            <a href="index.html" class="logo">Constructo</a>
+
+            <!-- кнопки вход/регистрация или логин/выход -->
+            <div id="login-reg-container">
+                <a href="#" class="button" id="show-modal-window">ВХОД</a>
+                <a href="#" class="button">РЕГИСТРАЦИЯ</a>
+            </div>
+
+            <div id="modal-window" class="modal-window">
+                <form action="#" id="login-form">
+                    <h3 class="form-title">Форма авторизации</h3>
+                    <div class="login-form-line">
+                        <label for="login">Ваш логин</label> &nbsp;&nbsp;
+                        <input type="text" id="login" required>
+                    </div>
+                    <div class="login-form-line">
+                        <label for="password">Ваш пароль</label> &nbsp;&nbsp;
+                        <input type="password" id="password" required>
+                    </div>
+                    <input type="submit" class="button" id="login-button" value="ВОЙТИ">
+                    <a href="#" class="button" id="hide-modal-window">ОТМЕНА</a>
+                </form>
+            </div>
+            <script src="js/login.js"></script>
+
+
+            <div class="menu">
+                <a href=""><span class="menuu">Поиск</span></a>
+                <a href="potfolio.html"><span class="menuu">Проекты</span></a>
+                <a href=""><span class="menuu">О нас</span></a>
+                <a href=""><span class="menuu">Контакты</span></a>
+            </div>
+        </div>
+        <div class="utp">Мы создаём <br>лучшие проекты</div>
+        <div class="offer">Каждый наш проект – результат усиленной работы множества специалистов,<br> чей опыт позволяет нам работать с масштабными проектами.
+        </div>
+        <a href="potfolio.html"><img src="img/more.png" alt="more" class="more"></a>
+    </header>
+    <main>
+        <div class="firstnum">
+            <div class="numbers">
+                <p>20,000</p>
+                <span>готовых проектов</span>
+
+                <p>10,000</p>
+                <span>в процессе</span>
+                
+                <p>347</p>
+                <span>выполненных проектов</span>
+            </div>
+
+            <div class="text">
+                <p>При работе над проектом учитывается специфика каждого конкретного здания и требования заказчика.</p>
+                <p>Для каждого случая подбирается свой, индивидуальный подход, чтобы добиться максимально качественных результатов, удовлетворяющих запросы клиента.</p>
+            </div>
+        </div>
+        <div class="secondmore">
+            <div class="one">
+                <p>Также</p>
+                <p>Также наши специалисты занимаются проектированием инженерных систем для существующих объектов строительства.</p>
+                <a href="potfolio.html"><img src="img/moreb.png" alt="more" class="emore"></a>
+            </div>
+            <div class="two">
+                <img src="img/two.png" alt="two">
+            </div>
+        </div>
+        <div class="thirdimg">
+            <div class="one">
+                <img src="img/white.png" alt="red">
+            </div>
+            <div class="two">
+                <p>Процесс</p>
+                <p>Всё начинается с создания эскизного проета. Далее мы расчитываем параметры железобетонных и металлоконструкций, разрабатываем архитектурное решение. Следом, разрабатываем архитектурно-строительную часть. И в конце разрабатываем проекта производства работ.</p>
+                <a href="potfolio.html"><img src="img/moreb.png" alt="more" class="emore"></a>
+            </div>
+        </div>
+
+        <div class="architects">
+            <h1>ARCHITECTS</h1>
+            <div class="block-images" onmouseover="show_description(0)" onmouseout="hide_description(0)">
+                <img src="img/sergey.jpg" class="image">
+                <div id="image_description0" class="image_description"></div>
+            </div>
+            <div class="block-images" onmouseover="show_description(1)" onmouseout="hide_description(1)">
+                <img src="img/nikolay.jpg" class="image">
+                <div id="image_description1" class="image_description"></div>
+            </div>
+            <div class="block-images" onmouseover="show_description(2)" onmouseout="hide_description(2)">
+                <img src="img/andreianddana.jpg" class="image">
+                <div id="image_description2" class="image_description"></div>
+            </div>
+            <script src="js/script.js"></script>
+        </div>
+
+
+        <div class = "all">
+            <input checked type="radio" name="respond" id="desktop">
+            <article id="slider">
+                <input checked type="radio" name="slider" id="switch1">
+                <input type="radio" name="slider" id="switch2">
+                <input type="radio" name="slider" id="switch3">
+                <input type="radio" name="slider" id="switch4">
+                <input type="radio" name="slider" id="switch5">
+
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="image">
+                            <article><img src="img/slay.jpg" alt=""></article>
+                            <article><img src="img/slay2.png" alt=""></article>
+                            <article><img src="img/slay3.png" alt=""></article>
+                            <article><img src="img/slay4.png" alt=""></article>
+                            <article><img src="img/slay5.png" alt=""></article>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>  
+                </div>
+                <div id="active">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>  
+                </div>
+            </article>
+        </div>
+        <div class="rasdeli">
+            <div class="first">
+                <p>Строительство</p>
+                <p>Компания «Constructo» - это комплексный подход к выполнению поставленных задач, поскольку все этапы строительства взаимосвязаны между собой и нуждаются в согласованном руководстве.</p>
+            </div>
+            <div class="second">
+                <p>Модульные Здания</p>
+                <p>ООО «Constructo» выполняет работы по сборке и монтажу модульных зданий. К нам обращаются, если необходимо получить надежное и функциональное строение для решения различных задач в кратчайшие сроки.</p>
+            </div>
+            <div class="third">
+                <p>Горячее Цинкование</p>
+                <p>ГОРЯЧЕЕ ЦИНКОВАНИЕ ОТ ООО «Constructo» - кратчайший путь между Вашей идеей и конечным Результатом.</p>
+            </div>
+            <div class="fourth">
+                <p>Загородные Дома</p>
+                <p>ООО «Constructo» предоставляет полный спектр услуг по проектированию и строительству загородной недвижимости.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class = "leftfoot">
+            <div class="logo">Constructo</div>
+            <p>РФ, г. Москва, 119530 Очаковское шоссе дом 39 эт. 4 пом. 3</p>
+            <a href="https://www.freepik.com/" target="_blank"><img src="img/Facebook.svg" alt="freepik"></a>
+            <a href="https://web.telegram.org/" target="_blank"><img src="img/Telegram.svg" alt="tg"></a>
+            <a href="https://www.google.ru/" target="_blank"><img src="img/Google.png" alt="google"></a>
+        </div>
+        <div class="rightfoot">
+            <p>Оставьте нам Вашу почту <br>и мы напишем Вам!</p>
+            <form action="mail">
+                <input type="email" placeholder="e-mail">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
